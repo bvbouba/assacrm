@@ -38,3 +38,8 @@
 {% translate "website form" %}
 {% translate "website email" %}
 {% translate "exhibition" %}
+
+{% translate "LESSIVE" %}
+{% translate "VAISSELLE" %}
+{% translate "MULTI-USAGE" %}
+{% translate "HYGIENE DES MAINS" %}

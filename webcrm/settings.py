@@ -27,14 +27,14 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Database
 DATABASES = {
     'default': {    # for MySQl
-        'ENGINE': 'django.db.backends.mysql',
-        # "ENGINE": "django.db.backends.postgresql", # for PostgreSQL
-        'PORT': '3306',
-        # 'PORT': '5432',   # for PostgreSQL
-        'NAME': 'crm_db',
-        'USER': '<specify user>',
-        'PASSWORD': '<specify password>',
-        'HOST': '<specify host>',
+        # 'ENGINE': 'django.db.backends.mysql',
+        "ENGINE": "django.db.backends.postgresql", # for PostgreSQL
+        # 'PORT': '3306',
+        'PORT': '5432',   # for PostgreSQL
+        'NAME': 'crm',
+        'USER': 'vaflaly',
+        'PASSWORD': 'Nogossan97*',
+        'HOST': 'localhost',
     }
 }
 
@@ -57,7 +57,8 @@ FORMS_URLFIELD_ASSUME_HTTPS = True
 # Internationalization
 LANGUAGE_CODE = 'en'
 LANGUAGES = [
-    ('en', _('English')),
+    ('fr', _('French')),
+    ('en', _('English'))
 ]
 
 TIME_ZONE = 'UTC'   # specify your time zone
