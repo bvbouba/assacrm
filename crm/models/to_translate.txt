@@ -43,3 +43,7 @@
 {% translate "VAISSELLE" %}
 {% translate "MULTI-USAGE" %}
 {% translate "HYGIENE DES MAINS" %}
+{% translate "Lessive" %}
+{% translate "Vaisselle" %}
+{% translate "Multi-tache" %}
+{% translate "Hygiene des mains" %}
