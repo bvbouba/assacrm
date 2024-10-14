@@ -146,7 +146,7 @@ class ContactForm(BaseContactForm):
     class Meta:
         model = Contact
         fields = '__all__'
-
+    
 
 class LeadForm(BaseContactForm):
     class Meta:

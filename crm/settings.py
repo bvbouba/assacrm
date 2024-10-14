@@ -46,8 +46,10 @@ FIRST_STEP = _('Establish the first contact with the client.')
 
 
 CONVERT_REQUIRED_FIELDS = (
-    'first_name', 'email',      # 'last_name'
-    'company_name', 'company_email'
+    'first_name', 
+    'email',     
+      # 'last_name'
+    'company_name', 'company_email',
 )
 
 KEEP_TICKET = mark_safe(

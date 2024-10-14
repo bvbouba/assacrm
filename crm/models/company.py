@@ -5,6 +5,7 @@ from django.contrib.contenttypes.fields import GenericRelation
 
 from common.models import Base1
 from crm.models.base_contact import BaseCounterparty
+from crm.models.others import ClientType
 
 
 
@@ -40,7 +41,8 @@ class Company(BaseCounterparty, Base1):
     )
     phone = models.CharField(
         max_length=100, 
-        blank=True, 
+        blank=False, 
+        null=False,
         default='',
         verbose_name=_("Phone")
     )
@@ -73,10 +75,11 @@ class Company(BaseCounterparty, Base1):
         help_text=_("Company Country")
     )
     type = models.ForeignKey(
-        'ClientType', 
-        blank=True, 
-        null=True, 
-        on_delete=models.SET_NULL,
+        ClientType, 
+        blank=False, 
+        null=False, 
+        default="",
+        on_delete=models.PROTECT,
         verbose_name=_("Type of company")
     )
     industry = models.ManyToManyField(

@@ -43,7 +43,7 @@ msgstr "Résumé des demandes"
 
 #: analytics/models.py:44 analytics/models.py:45
 msgid "Lead source Summary"
-msgstr "Résumé des sources de prospects"
+msgstr "Résumé des sources du Prospect"
 
 #: analytics/models.py:52 analytics/models.py:53
 msgid "Closing reason Summary"
@@ -82,7 +82,7 @@ msgstr "Raison de clôture sur le mois"
 
 #: analytics/site/conversionadmin.py:11
 msgid "Conversion of requests into successful deals (for the last 365 days)"
-msgstr "Conversion des demandes en affaires réussies (pour les 365 derniers jours)"
+msgstr "Conversion des demandes en transactions réussies (pour les 365 derniers jours)"
 
 #: analytics/site/conversionadmin.py:39
 msgid "Conversion of primary requests"
@@ -261,7 +261,7 @@ msgstr "Tout"
 #: crm/templates/crm/change_owner_companies.html:26 crm/utils/admfilters.py:346
 #: voip/models.py:49
 msgid "Owner"
-msgstr "Propriétaire"
+msgstr "Responsable"
 
 #: analytics/site/outputstatadmin.py:169 crm/models/output.py:19
 #: crm/models/product.py:31 crm/utils/admfilters.py:269
@@ -597,7 +597,7 @@ msgstr "Département"
 #: common/models.py:89
 #: common/models.py:94
 msgid "Department and Owner do not match"
-msgstr "Le département et le propriétaire ne correspondent pas"
+msgstr "Le département et le responsable ne correspondent pas"
 
 #: common/models.py:119
 msgid "Departments"
@@ -685,7 +685,7 @@ msgstr "Fichier joint"
 
 #: common/models.py:206
 msgid "Attach to the deal"
-msgstr "Joindre à l'affaire"
+msgstr "Joindre a la transaction"
 
 #: common/models.py:228
 #: common/templates/common/notice_participants_email.html:12
@@ -939,7 +939,7 @@ msgstr "Priorité"
 #: crm/models/deal.py:183 crm/models/request.py:139
 #: massmail/models/email_account.py:110 tasks/models/taskbase.py:97
 msgid "Co-owner"
-msgstr "Co-propriétaire"
+msgstr "Co-responsable"
 
 #: common/templates/common/notice_participants_email.html:16
 #: crm/templates/crm/print_request.html:57 tasks/models/taskbase.py:49
@@ -1080,7 +1080,7 @@ msgstr "Nom"
 
 #: crm/admin.py:155 crm/site/dealadmin.py:247
 msgid "Contact info"
-msgstr "Informations de contact"
+msgstr "Informations du contact"
 
 #: crm/admin.py:176 crm/site/crmemailadmin.py:220 crm/site/dealadmin.py:271
 #: crm/site/requestadmin.py:84
@@ -1129,19 +1129,19 @@ msgstr "Pour convertir, veuillez remplir les champs ci-dessous."
 
 #: crm/forms/admin_forms.py:207 crm/forms/admin_forms.py:208
 msgid "Specify the deal amount"
-msgstr "Précisez le montant de l'affaire"
+msgstr "Précisez le montant de la transaction"
 
 #: crm/forms/admin_forms.py:236
 msgid "Contact does not match the company"
-msgstr "Le contact ne correspond pas à l'entreprise"
+msgstr "Le contact ne correspond pas au client"
 
 #: crm/forms/admin_forms.py:241
 msgid "Select only Contact or only Lead"
-msgstr "Sélectionnez uniquement un Contact ou uniquement un Lead"
+msgstr "Sélectionnez uniquement un Contact ou uniquement un Prospect"
 
 #: crm/forms/admin_forms.py:246
 msgid "Select only Company or only Lead"
-msgstr "Sélectionnez uniquement une Société ou uniquement un Lead"
+msgstr "Sélectionnez uniquement un Client ou uniquement un Prospect"
 
 #: crm/forms/admin_forms.py:325
 msgid "First select a department."
@@ -1166,7 +1166,7 @@ msgstr "Numéro de téléphone (avec indicatif du pays)"
 #: crm/forms/contact_form.py:28 crm/models/company.py:21 crm/models/lead.py:21
 #: crm/models/request.py:55
 msgid "Company name"
-msgstr "Nom de l'entreprise"
+msgstr "Nom du Client"
 
 #: crm/forms/contact_form.py:72
 msgid "Sorry, invalid reCAPTCHA. Please try again or send an email."
@@ -1304,7 +1304,7 @@ msgstr "Les spécifications ne conviennent pas"
 
 #: crm/models/_to_translate.txt:34 crm/models/to_translate.txt:34
 msgid "The deal was closed successfully"
-msgstr "L'affaire a été conclue avec succès"
+msgstr "La transaction a été conclue avec succès"
 
 #: crm/models/_to_translate.txt:35 crm/models/to_translate.txt:35
 msgid "Purchase postponed"
@@ -1328,7 +1328,7 @@ msgstr "exposition"
 
 #: crm/models/base_contact.py:16 crm/models/request.py:29
 msgid "The name of the contact person (one word)."
-msgstr "Le nom de la personne de contact (un mot)."
+msgstr "Le nom du contact (un mot)."
 
 #: crm/models/base_contact.py:17 crm/models/request.py:28
 msgid "First name"
@@ -1340,11 +1340,11 @@ msgstr "Deuxième prénom"
 
 #: crm/models/base_contact.py:22 crm/models/request.py:34
 msgid "The middle name of the contact person."
-msgstr "Le deuxième prénom de la personne de contact."
+msgstr "Le deuxième prénom du Contact."
 
 #: crm/models/base_contact.py:26 crm/models/request.py:39
 msgid "The last name of the contact person (one word)."
-msgstr "Le nom de famille de la personne de contact (un mot)."
+msgstr "Le nom de famille du Contact (un mot)."
 
 #: crm/models/base_contact.py:27 crm/models/request.py:38
 msgid "Last name"
@@ -1352,7 +1352,7 @@ msgstr "Nom de famille"
 
 #: crm/models/base_contact.py:31
 msgid "The title (position) of the contact person."
-msgstr "Le titre (poste) de la personne de contact."
+msgstr "Le titre (poste) du Contact."
 
 #: crm/models/base_contact.py:32
 msgid "Title / Position"
@@ -1386,7 +1386,7 @@ msgstr "Ville"
 
 #: crm/models/base_contact.py:72
 msgid "Company city"
-msgstr "Ville de l'entreprise"
+msgstr "Ville du Client"
 
 #: crm/models/base_contact.py:73 crm/models/request.py:93
 msgid "Object of City in database"
@@ -1408,7 +1408,7 @@ msgstr "Utilisez une virgule pour séparer les emails."
 #: crm/models/base_contact.py:134 crm/models/others.py:63
 #: crm/models/request.py:51
 msgid "Lead Source"
-msgstr "Source de leads"
+msgstr "Source du Prospect"
 
 #: crm/models/base_contact.py:138
 msgid "Mass mailing"
@@ -1426,11 +1426,11 @@ msgstr "Date du dernier contact"
 #: crm/templates/admin/crm/contact/change_form_object_tools.html:7
 #: crm/templates/crm/print_request.html:49
 msgid "Company"
-msgstr "Entreprise"
+msgstr "Client"
 
 #: crm/models/company.py:14
 msgid "Companies"
-msgstr "Entreprises"
+msgstr "Clients"
 
 #: crm/models/company.py:27 crm/models/country.py:21
 msgid "Alternative names"
@@ -1454,7 +1454,7 @@ msgstr "Numéro d'enregistrement"
 
 #: crm/models/company.py:65
 msgid "Registration number of Company"
-msgstr "Numéro d'enregistrement de l'entreprise"
+msgstr "Numéro d'enregistrement du Client"
 
 #: crm/models/company.py:72 crm/models/deal.py:109
 msgid "country"
@@ -1462,28 +1462,28 @@ msgstr "pays"
 
 #: crm/models/company.py:73
 msgid "Company Country"
-msgstr "Pays de l'entreprise"
+msgstr "Pays du Client"
 
 #: crm/models/company.py:80 crm/models/lead.py:44
 msgid "Type of company"
-msgstr "Type d'entreprise"
+msgstr "Type de Client"
 
 #: crm/models/company.py:85 crm/models/lead.py:49
 msgid "Industry of company"
-msgstr "Secteur d'activité de l'entreprise"
+msgstr "Secteur d'activité du Client"
 
 #: crm/models/contact.py:12
 msgid "Contact person"
-msgstr "Personne de contact"
+msgstr "Contact"
 
 #: crm/models/contact.py:13
 msgid "Contact persons"
-msgstr "Personnes de contact"
+msgstr "Les Contacts"
 
 #: crm/models/contact.py:19 crm/models/deal.py:141 crm/models/lead.py:57
 #: crm/models/request.py:73
 msgid "Company of contact"
-msgstr "Entreprise de contact"
+msgstr "Client"
 
 #: crm/models/country.py:6
 msgid "has already been assigned to the city"
@@ -1531,8 +1531,9 @@ msgstr "Pas supporté par tous les services de messagerie."
 #: crm/templates/admin/crm/deal/change_list_object_tools.html:14
 #: crm/templates/admin/crm/request/change_form_object_tools.html:7
 #: tasks/models/memo.py:65
+#: crm/models/payment.py:105
 msgid "Deal"
-msgstr "Accord"
+msgstr "Transaction"
 
 #: crm/models/crmemail.py:49 crm/models/deal.py:117 crm/models/lead.py:12
 #: crm/models/request.py:64
@@ -1558,11 +1559,11 @@ msgstr "Demande"
 #: crm/templates/admin/crm/deal/change_form_object_tools.html:31
 #: crm/templates/admin/crm/lead/change_form_object_tools.html:6
 msgid "Deals"
-msgstr "Accords"
+msgstr "Transactions"
 
 #: crm/models/deal.py:19
 msgid "Deal name"
-msgstr "Nom de l'accord"
+msgstr "Nom de la transaction"
 
 #: crm/models/deal.py:23 crm/models/deal.py:203 tasks/models/taskbase.py:77
 msgid "Next step"
@@ -1590,15 +1591,15 @@ msgstr "Dates de passage des étapes"
 
 #: crm/models/deal.py:57
 msgid "Date of deal closing"
-msgstr "Date de clôture de l'accord"
+msgstr "Date de clôture de la transaction"
 
 #: crm/models/deal.py:62
 msgid "Date of won deal closing"
-msgstr "Date de clôture de l'accord gagné"
+msgstr "Date de clôture de la transaction gagné"
 
 #: crm/models/deal.py:71
 msgid "Total deal amount without VAT"
-msgstr "Montant total de l'accord hors TVA"
+msgstr "Montant total de la transaction hors TVA"
 
 #: crm/models/deal.py:78 crm/models/payment.py:16 crm/models/payment.py:73
 #: crm/models/product.py:49
@@ -1615,11 +1616,11 @@ msgstr "Probabilité (%)"
 
 #: crm/models/deal.py:148
 msgid "Partner contact"
-msgstr "Contact partenaire"
+msgstr "Contact du partenaire"
 
 #: crm/models/deal.py:151
 msgid "Contact person of dealer or distribution company"
-msgstr "Personne de contact du revendeur ou de la société de distribution"
+msgstr "Le Contact du revendeur ou de la société de distribution"
 
 #: crm/models/deal.py:156
 msgid "Relevant"
@@ -1635,20 +1636,20 @@ msgstr "Rappelle-moi."
 
 #: crm/models/lead.py:13
 msgid "Leads"
-msgstr "Leads"
+msgstr "Prospects"
 
 
 #: crm/models/lead.py:29
 msgid "Company phone"
-msgstr "Téléphone de l'entreprise"
+msgstr "Téléphone du client"
 
 #: crm/models/lead.py:33
 msgid "Company address"
-msgstr "Adresse de l'entreprise"
+msgstr "Adresse du client"
 
 #: crm/models/lead.py:37
 msgid "Company email"
-msgstr "Email de l'entreprise"
+msgstr "Email du client"
 
 #: crm/models/others.py:27
 msgid "Type of Clients"
@@ -1696,7 +1697,7 @@ msgstr "Les marchandises ont-elles déjà été expédiées à cette étape ?"
 
 #: crm/models/others.py:64
 msgid "Lead Sources"
-msgstr "Sources de prospects"
+msgstr "Sources du Prospect"
 
 #: crm/models/others.py:76
 msgid "form template name"
@@ -1921,7 +1922,7 @@ msgstr "Demande pour"
 
 #: crm/models/request.py:50
 msgid "Lead source"
-msgstr "Source de leads"
+msgstr "Source du Prospect"
 
 #: crm/models/request.py:59
 msgid "Date of receipt"
@@ -1961,7 +1962,7 @@ msgstr "Dupliquer"
 
 #: crm/models/request.py:127
 msgid "Duplicate request. The deal will not be created."
-msgstr "Demande dupliquée. L'affaire ne sera pas créée."
+msgstr "Demande dupliquée. La transaction ne sera pas créée."
 
 #: crm/models/request.py:131 help/models.py:125
 msgid "Verification required"
@@ -1973,11 +1974,11 @@ msgstr "Les liens sont définis automatiquement et nécessitent une vérificatio
 
 #: crm/models/request.py:148 crm/models/request.py:149
 msgid "Company and contact person do not match."
-msgstr "L'entreprise et le contact ne correspondent pas."
+msgstr "Le Client et le Contact ne correspondent pas."
 
 #: crm/models/request.py:153 crm/models/request.py:154
 msgid "Specify the contact person or lead. But not both."
-msgstr "Veuillez spécifier le contact ou le lead. Mais pas les deux."
+msgstr "Veuillez spécifier le Contact ou le Prospect. Mais pas les deux."
 
 #: crm/models/tag.py:9 crm/utils/admfilters.py:232 tasks/models/tag.py:8
 msgid "Tag"
@@ -1993,7 +1994,7 @@ msgstr "Établir le premier contact avec le client."
 
 #: crm/site/companyadmin.py:26
 msgid "Attention! You can only view companies associated with your department."
-msgstr "Attention ! Vous ne pouvez voir que les entreprises associées à votre département."
+msgstr "Attention ! Vous ne pouvez voir que les clients associés à votre département."
 
 #: crm/site/companyadmin.py:206 crm/site/leadadmin.py:261
 msgid "Warning:"
@@ -2001,11 +2002,11 @@ msgstr "Avertissement :"
 
 #: crm/site/companyadmin.py:208
 msgid "Owner will also be changed for contact persons."
-msgstr "Le propriétaire sera également changé pour les contacts."
+msgstr "Le responsable sera également changé pour les Contacts."
 
 #: crm/site/companyadmin.py:221
 msgid "Change owner of selected Companies"
-msgstr "Changer le propriétaire des entreprises sélectionnées"
+msgstr "Changer le responsable des clients sélectionnés"
 
 #: crm/site/crmadminsite.py:22
 msgid "Your Excel file"
@@ -2123,19 +2124,19 @@ msgstr "Date de clôture"
 
 #: crm/site/dealadmin.py:58
 msgid "View Contact in new tab"
-msgstr "Voir le contact dans un nouvel onglet"
+msgstr "Voir le Contact dans un nouvel onglet"
 
 #: crm/site/dealadmin.py:59
 msgid "View Company in new tab"
-msgstr "Voir l'entreprise dans un nouvel onglet"
+msgstr "Voir Client dans un nouvel onglet"
 
 #: crm/site/dealadmin.py:62
 msgid "Deal counter"
-msgstr "Compteur d'affaires"
+msgstr "Compteur transaction"
 
 #: crm/site/dealadmin.py:63
 msgid "View Lead in new tab"
-msgstr "Voir le lead dans un nouvel onglet"
+msgstr "Voir le Prospect dans un nouvel onglet"
 
 #: crm/site/dealadmin.py:64
 msgid "Unanswered email"
@@ -2163,11 +2164,11 @@ msgstr "Date d'expédition expirée"
 
 #: crm/site/dealadmin.py:87
 msgid "Relevant deal"
-msgstr "Affaire pertinente"
+msgstr "Transaction pertinente"
 
 #: crm/site/dealadmin.py:158
 msgid "Deal with ID '{}' does not exist. Perhaps it was deleted?"
-msgstr "L'affaire avec l'ID '{}' n'existe pas. Peut-être a-t-elle été supprimée ?"
+msgstr "La transaction avec l'ID '{}' n'existe pas. Peut-être a-t-elle été supprimée ?"
 
 #: crm/site/dealadmin.py:221
 msgid "View the Request"
@@ -2175,15 +2176,15 @@ msgstr "Voir la demande"
 
 #: crm/site/dealadmin.py:539
 msgid "Create Email to Contact"
-msgstr "Créer un email au contact"
+msgstr "Créer un email pour contact"
 
 #: crm/site/dealadmin.py:542
 msgid "Create Email to Lead"
-msgstr "Créer un email au lead"
+msgstr "Créer Email au Prospect"
 
 #: crm/site/dealadmin.py:582
 msgid "Important deal"
-msgstr "Affaire importante"
+msgstr "Transaction importante"
 
 #: crm/site/dealadmin.py:606
 #, python-format
@@ -2200,11 +2201,11 @@ msgstr "Payé"
 
 #: crm/site/dealadmin.py:699
 msgid "Contact is Lead (no company)"
-msgstr "Le contact est un lead (pas d'entreprise)"
+msgstr "Le Contact est un Prospect (pas Client)"
 
 #: crm/site/leadadmin.py:117
 msgid "Person contact details"
-msgstr "Détails de contact de la personne"
+msgstr "Détails du Contact"
 
 #: crm/site/leadadmin.py:126
 msgid "Additional person details"
@@ -2212,16 +2213,16 @@ msgstr "Détails supplémentaires de la personne"
 
 #: crm/site/leadadmin.py:139
 msgid "Company contact details"
-msgstr "Détails de contact de l'entreprise"
+msgstr "Détails du Contact pour le client"
 
 #: crm/site/leadadmin.py:248
 #, python-brace-format
 msgid "The lead \"{obj}\" has been converted successfully."
-msgstr "Le lead \"{obj}\" a été converti avec succès."
+msgstr "Le Prospect \"{obj}\" a été converti avec succès."
 
 #: crm/site/leadadmin.py:263
 msgid "This Lead is disqualified! Please read the description."
-msgstr "Ce lead est disqualifié ! Veuillez lire la description."
+msgstr "Ce Prospect est disqualifié ! Veuillez lire la description."
 
 #: crm/site/requestadmin.py:37
 msgid "Client Loyalty"
@@ -2233,11 +2234,11 @@ msgstr "Pays non spécifié dans la demande"
 
 #: crm/site/requestadmin.py:45
 msgid "You received the deal"
-msgstr "Vous avez reçu l'affaire"
+msgstr "Vous avez reçu une transaction"
 
 #: crm/site/requestadmin.py:46
 msgid "You are the co-owner of the deal"
-msgstr "Vous êtes le co-propriétaire de l'affaire"
+msgstr "Vous êtes le co-responsable de la transaction"
 
 #: crm/site/requestadmin.py:52
 msgid "Primary request"
@@ -2245,7 +2246,7 @@ msgstr "Demande principale"
 
 #: crm/site/requestadmin.py:53
 msgid "You are the co-owner of the request"
-msgstr "Vous êtes le co-propriétaire de la demande"
+msgstr "Vous êtes le co-responsable de la demande"
 
 #: crm/site/requestadmin.py:54
 msgid "You received the request"
@@ -2270,7 +2271,7 @@ msgstr "Date d'expédition réelle."
 
 #: crm/site/shipmentadmin.py:32
 msgid "Deal is paid."
-msgstr "L'affaire est payée."
+msgstr "La transaction est payée."
 
 #: crm/site/shipmentadmin.py:33
 msgid "Next<br>payment"
@@ -2306,7 +2307,7 @@ msgstr "Date d'expédition selon un contrat."
 #: crm/templates/admin/crm/shipment/change_form_object_tools.html:6
 #: tasks/templates/admin/tasks/memo/change_form_object_tools.html:8
 msgid "View the deal"
-msgstr "Voir l'affaire"
+msgstr "Voir la transaction"
 
 #: crm/site/shipmentadmin.py:254
 msgid "paid"
@@ -2471,27 +2472,27 @@ msgstr "Note de service"
 
 #: crm/templates/admin/crm/deal/change_form_object_tools.html:14
 msgid "View the correspondence on this Deal"
-msgstr "Voir la correspondance sur cette affaire"
+msgstr "Voir la correspondance sur cette transaction"
 
 #: crm/templates/admin/crm/deal/change_form_object_tools.html:22
 msgid "Import Email regarding this Deal"
-msgstr "Importer un email concernant cette affaire"
+msgstr "Importer un email concernant cette transaction"
 
 #: crm/templates/admin/crm/deal/change_form_object_tools.html:29
 msgid "View Deals with this Company"
-msgstr "Voir les affaires avec cette entreprise"
+msgstr "Voir les transactions avec ce Client"
 
 #: crm/templates/admin/crm/deal/change_form_object_tools.html:38
 msgid "View the history of changes for this Deal"
-msgstr "Voir l'historique des changements pour cette affaire"
+msgstr "Voir l'historique des changements pour cette Transaction"
 
 #: crm/templates/admin/crm/deal/change_list_object_tools.html:6
 msgid "Toggle default deal sorting"
-msgstr "Basculer le tri par défaut des affaires"
+msgstr "Basculer le tri par défaut des transactions"
 
 #: crm/templates/admin/crm/deal/change_list_object_tools.html:13
 msgid "A deal is created based on a request"
-msgstr "Une affaire est créée sur la base d'une demande"
+msgstr "Une transaction est créée sur la base d'une demande"
 
 #: crm/templates/admin/crm/inline_emails.html:6
 msgid "Last few letters"
@@ -2535,7 +2536,7 @@ msgstr "Importer la demande de"
 
 #: crm/templates/admin/crm/request/submit_line.html:8
 msgid "Create deal"
-msgstr "Créer une affaire"
+msgstr "Créer une transaction"
 
 #: crm/templates/crm/addfiles.html:20
 msgid "Please select files to attach to the letter."
@@ -2544,7 +2545,7 @@ msgstr "Veuillez sélectionner des fichiers à joindre à la lettre."
 #: crm/templates/crm/change_owner_companies.html:20
 msgid ""
 "Please choose a new owner for selected Companies and their Contact persons"
-msgstr "Veuillez choisir un nouveau propriétaire pour les entreprises sélectionnées et leurs contacts."
+msgstr "Veuillez choisir un nouveau responsable pour les clients sélectionnées et leurs Contacts."
 
 #: crm/templates/crm/del_duplicate_button.html:5
 msgid "Correctly delete this object as a duplicate."
@@ -2627,7 +2628,7 @@ msgstr "Non"
 
 #: crm/utils/admfilters.py:501
 msgid "Has Contacts"
-msgstr "A des contacts"
+msgstr "A des Contacts"
 
 #: crm/utils/admfilters.py:567
 msgid "mailbox"
@@ -2652,7 +2653,7 @@ msgstr "corbeille"
 
 #: crm/utils/helpers.py:30
 msgid "No deal amount"
-msgstr "Pas de montant d'affaire"
+msgstr "Pas de montant de transaction"
 
 #: crm/utils/helpers.py:31
 msgid "Unacceptable phone number value"
@@ -2716,7 +2717,7 @@ msgstr "Échec : %s"
 
 #: crm/views/change_owner_companies.py:33
 msgid "Owner changed successfully"
-msgstr "Propriétaire changé avec succès"
+msgstr "Responsable changé avec succès"
 
 #: crm/views/contact_form.py:39 tests/crm/views/test_request_receiving.py:276
 msgid "Dear {}, thanks for your request!"
@@ -2848,7 +2849,7 @@ msgstr "Informations sur le service"
 
 #: massmail/admin_actions.py:17
 msgid "Please select recipients only with the same owner."
-msgstr "Veuillez sélectionner des destinataires uniquement avec le même propriétaire."
+msgstr "Veuillez sélectionner des destinataires uniquement avec le même responsable."
 
 #: massmail/admin_actions.py:18
 msgid "Bad result - no recipients! Make another choice."
@@ -3247,7 +3248,7 @@ msgstr "Paramètres"
 
 #: settings/models.py:7
 msgid "Banned company name"
-msgstr "Nom de société interdit"
+msgstr "Nom de Client banni"
 
 #: settings/models.py:8
 msgid "Banned company names"
@@ -3371,7 +3372,7 @@ msgstr "Brouillon"
 
 #: tasks/models/memo.py:77
 msgid "Available only to the owner."
-msgstr "Disponible uniquement pour le propriétaire."
+msgstr "Disponible uniquement pour le responsable."
 
 #: tasks/models/memo.py:81
 msgid "Notified"
@@ -3634,7 +3635,7 @@ msgstr ""
 
 #: tasks/site/tasksbasemodeladmin.py:44
 msgid "You have been assigned as the task co-owner"
-msgstr "Vous avez été assigné en tant que co-propriétaire de la tâche"
+msgstr "Vous avez été assigné en tant que co-responsable de la tâche"
 
 #: tasks/site/tasksbasemodeladmin.py:46
 msgid "Acquainted with the task"

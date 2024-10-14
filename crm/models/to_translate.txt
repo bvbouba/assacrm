@@ -47,3 +47,18 @@
 {% translate "Vaisselle" %}
 {% translate "Multi-tache" %}
 {% translate "Hygiene des mains" %}
+{% translate "Multitâche" %}
+{% translate "Lavage des mains" %}
+{% translate "Boutique de quartier" %}
+{% translate "Supermarchés" %}
+{% translate "Hypermarchés" %}
+{% translate "Mamie du marché" %}
+{% translate "Distributeur" %}
+{% translate "Grossistes" %}
+{% translate "Mix" %}
+{% translate "Mamies du marché" %}
+{% translate "Mixte" %}
+{% translate "Mixte 1" %}
+{% translate "Commerciaux" %}
+{% translate "Employés" %}
+{% translate "Exhibition" %}

@@ -102,6 +102,7 @@ class Payment(BasePayment):
     deal = models.ForeignKey(
         'crm.Deal',
         on_delete=models.CASCADE,
+        verbose_name=_("Deal")
     )
     payment_date = models.DateField(
         default=date.today,

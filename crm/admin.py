@@ -85,12 +85,17 @@ class CompanyAdmin(companyadmin.CompanyAdmin):
             (None, {
                 'fields': (
                     ('full_name', 'disqualified'),
-                    ('alternative_names', 'massmail'),
-                    ('type', 'lead_source'),
+                    ('alternative_names', 
+                    #  'massmail'
+                     ),
+                    (
+                        'type', 
+                    #  'lead_source'
+                     ),
                     'registration_number',
                     'was_in_touch',
                     'description',
-                    'industry',
+                    # 'industry',
                 )
             }),
             (None, {
@@ -102,8 +107,8 @@ class CompanyAdmin(companyadmin.CompanyAdmin):
             }),
             (_('Contact details'), {
                 'fields': (
-                    ('email', 'phone'),
-                    'website',
+                    ('phone', 'email'),
+                    # 'website',
                     'city_name',
                     ('city', 'country'),
                     'address',
@@ -127,7 +132,7 @@ class CompanyAdmin(companyadmin.CompanyAdmin):
         if not instance.name:
             instance.name = settings.NO_NAME_STR
         return instance.name
-
+    
 
 class DealAdmin(dealadmin.DealAdmin):
     list_display = [

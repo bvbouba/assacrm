@@ -50,7 +50,9 @@ class BaseContact(models.Model):
         verbose_name=_("Secondary email")
     )
     phone = models.CharField(
-        max_length=100, blank=True, default='',
+        max_length=100, 
+        null=False,
+        blank=False,
         verbose_name=_("Phone")
     )
     other_phone = models.CharField(max_length=100, blank=True, default='')
@@ -121,8 +123,9 @@ class BaseCounterparty(models.Model):
     )
     email = models.CharField(
         max_length=200,
-        null=False,
-        blank=False,
+        null=True,
+        blank=True,
+        default='',
         verbose_name="Email",
         help_text=_("Use comma to separate Emails.")
     )

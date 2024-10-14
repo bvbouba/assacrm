@@ -71,12 +71,14 @@ class RequestAdmin(CrmModelAdmin):
                 'duplicate',
                 ('lead_source', 'receipt_date'),
                 ('department', 'owner', 'co_owner'),
-                ('first_name', 'middle_name', 'last_name'),
-                ('email', 'phone'),
-                'website',
-                'company_name',
-                ('country', 'city_name'),
-                ('description', 'translation'),
+                # ('first_name', 'middle_name', 'last_name'),
+                # ('email', 'phone'),
+                # 'website',
+                # 'company_name',
+                # ('country', 'city_name'),
+                ('description', 
+                #  'translation'
+                 ),
                 'remark',
                 'products'
             ]
@@ -146,10 +148,17 @@ class RequestAdmin(CrmModelAdmin):
         form = super().get_form(request, obj, **kwargs)
         if request.method == "POST" and '_create-deal' in request.POST:
             department_id = request.user.department_id
-            works_globally = Department.objects.get(
-                id=department_id).works_globally
-            if works_globally:
-                form.country_must_be_specified = True
+            if department_id:
+                try:
+                    department = Department.objects.get(id=department_id)
+                    works_globally = department.works_globally
+                    if works_globally:
+                        form.country_must_be_specified = True
+                except Department.DoesNotExist:
+                    form.country_must_be_specified = False 
+            else:
+                form.country_must_be_specified = False 
+
         return form
 
     def get_list_display(self, request):

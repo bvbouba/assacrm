@@ -38,7 +38,7 @@ class Request(Base1):
         verbose_name=_("Last name"),
         help_text=_("The last name of the contact person (one word).")
     )
-    email = models.CharField(max_length=250, blank=True, default='')
+    email = models.CharField(max_length=250,null=True, blank=True, default='')
 
     phone = models.CharField(max_length=200, blank=True, default='')
 
@@ -51,7 +51,7 @@ class Request(Base1):
         help_text=_("Lead Source")
     )
     company_name = models.CharField(
-        max_length=200, blank=True, default='',
+        max_length=200, blank=False, default='',
         verbose_name=_("Company name"),
     )
     receipt_date = models.DateField(
@@ -68,7 +68,7 @@ class Request(Base1):
         verbose_name=_("Contact")
     )
     company = models.ForeignKey(
-        'Company', blank=True, null=True, on_delete=models.CASCADE,
+        'Company', blank=False, null=False,default='', on_delete=models.CASCADE,
         related_name="requests",
         verbose_name=_("Company of contact")
     )
@@ -78,7 +78,7 @@ class Request(Base1):
         related_name="requests",
     )
     products = models.ManyToManyField(
-        'Product', blank=True,
+        'Product', blank=False, null=False, default='',
         verbose_name=_("Products")
     )
     country = models.ForeignKey(
@@ -414,7 +414,7 @@ class Request(Base1):
         if self.company:
             lead.industry.set(self.company.industry.all())
         self.lead = lead
-        self.company = None
+        # self.company = None
         self.verification_required = True
 
     def update_request_data(self) -> None:

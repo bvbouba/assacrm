@@ -33,6 +33,7 @@ class Lead(BaseCounterparty, BaseContact, Base1):
         verbose_name=_("Company address"),
     )
     company_email = models.EmailField(
+        null=True,
         blank=True, default='',
         verbose_name=_("Company email"),
     )

@@ -26,8 +26,7 @@ class ClientType(Base):
     class Meta:
         verbose_name = _('Type of Clients')
         verbose_name_plural = _('Types of Clients')
-
-
+    
 class Industry(Base):
     class Meta:
         verbose_name = _('Industry of Clients')
