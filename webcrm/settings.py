@@ -7,6 +7,13 @@ from massmail.settings import *     # NOQA
 from common.settings import *       # NOQA
 from tasks.settings import *        # NOQA
 from voip.settings import *         # NOQA
+import os 
+
+def get_list(text):
+    return [item.strip() for item in text.split(",")]
+
+
+
 
 # ---- Django settings ---- #
 
@@ -19,24 +26,23 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # To get new value of key use code:
 # from django.core.management.utils import get_random_secret_key
 # print(get_random_secret_key())
-SECRET_KEY = 'j1c=6$s-dh#$ywt@(q4cm=j&0c*!0x!e-qm6k1%yoliec(15tn'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # Add your hosts to the list.
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = get_list(os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1"))
 
 # Database
 DATABASES = {
-    'default': {    # for MySQl
-        # 'ENGINE': 'django.db.backends.mysql',
+    'default': {
         "ENGINE": "django.db.backends.postgresql", # for PostgreSQL
-        # 'PORT': '3306',
-        'PORT': '5432',   # for PostgreSQL
-        'NAME': 'crm',
-        'USER': 'vaflaly',
-        'PASSWORD': 'Nogossan97*',
-        'HOST': 'localhost',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
     }
 }
+
 
 EMAIL_HOST = '<specify host>'   # 'smtp.example.com'
 EMAIL_HOST_PASSWORD = '<specify password>'
