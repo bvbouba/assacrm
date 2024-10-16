@@ -7,6 +7,14 @@ from massmail.settings import *     # NOQA
 from common.settings import *       # NOQA
 from tasks.settings import *        # NOQA
 from voip.settings import *         # NOQA
+import os 
+from dotenv import load_dotenv
+
+def get_list(text):
+    return [item.strip() for item in text.split(",")]
+
+
+load_dotenv()
 
 # ---- Django settings ---- #
 
@@ -19,43 +27,41 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # To get new value of key use code:
 # from django.core.management.utils import get_random_secret_key
 # print(get_random_secret_key())
-SECRET_KEY = 'j1c=6$s-dh#$ywt@(q4cm=j&0c*!0x!e-qm6k1%yoliec(15tn'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # Add your hosts to the list.
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = get_list(os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1"))
 
 # Database
 DATABASES = {
-    'default': {    # for MySQl
-        # 'ENGINE': 'django.db.backends.mysql',
+    'default': {
         "ENGINE": "django.db.backends.postgresql", # for PostgreSQL
-        # 'PORT': '3306',
-        'PORT': '5432',   # for PostgreSQL
-        'NAME': 'crm',
-        'USER': 'vaflaly',
-        'PASSWORD': 'Nogossan97*',
-        'HOST': 'localhost',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
     }
 }
 
-EMAIL_HOST = '<specify host>'   # 'smtp.example.com'
-EMAIL_HOST_PASSWORD = '<specify password>'
-EMAIL_HOST_USER = 'crm@example.com'
+EMAIL_HOST = 'in-v3.mailjet.com'  # 'smtp.example.com'
+EMAIL_HOST_PASSWORD = '5c3c766698f7b813deb405a36a1d02c3'
+EMAIL_HOST_USER = 'bvbouba@gmail.com'
 EMAIL_PORT = 587
 EMAIL_SUBJECT_PREFIX = 'CRM: '
 EMAIL_USE_TLS = True
-SERVER_EMAIL = 'crm@example.com'
-DEFAULT_FROM_EMAIL = 'crm@example.com'
+SERVER_EMAIL = 'crm@no-reply.com'
+DEFAULT_FROM_EMAIL = 'crm@no-reply.com'
 
-ADMINS = [("<Admin1>", "<admin1_box@example.com>")]   # specify admin
+ADMINS = [("<Admin1>", "<bvbouba@gmail.com>")]   # specify admin
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG',True)
 
 FORMS_URLFIELD_ASSUME_HTTPS = True
 
 # Internationalization
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'fr'
 LANGUAGES = [
     ('fr', _('French')),
     ('en', _('English'))
@@ -263,12 +269,17 @@ INDEX_TITLE = _('Main Menu')
 
 
 # This is copyright information. Please don't change it!
-COPYRIGHT_STRING = "Django-CRM. Copyright (c) 2024"
-PROJECT_NAME = "Django-CRM"
-PROJECT_SITE = "https://github.com/DjangoCRM/django-crm/"
+COPYRIGHT_STRING = "Assa-CRM. Copyright (c) 2024"
+PROJECT_NAME = "Assa-CRM"
+PROJECT_SITE = "https://assa-crm.us.to"
 
 
 TESTING = sys.argv[1:2] == ['test']
 if TESTING:
     SECURE_SSL_REDIRECT = False
     LANGUAGES.append(('uk', ''))
+
+
+USE_THOUSAND_SEPARATOR = True
+NUMBER_GROUPING = 3 
+THOUSAND_SEPARATOR = ' '

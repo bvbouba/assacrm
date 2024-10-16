@@ -43,3 +43,16 @@
 {% translate "VAISSELLE" %}
 {% translate "MULTI-USAGE" %}
 {% translate "HYGIENE DES MAINS" %}
+{% translate "Vaisselle" %}
+{% translate "Lessive" %}
+{% translate "Multitâche" %}
+{% translate "boutique" %}
+{% translate "mamies" %}
+{% translate "grossistes" %}
+{% translate "client final" %}
+{% translate "Supermarchés" %}
+{% translate "supermarchés" %}
+{% translate "Distributeur" %}
+{% translate "Internet" %}
+{% translate "Equipe commercial" %}
+{% translate "Promotion / Marketing" %}
